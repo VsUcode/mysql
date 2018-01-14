@@ -1,0 +1,59 @@
+insert:
+	插入单条数据（整行）：
+		INSERT [INTO] table_name VALUES(...)
+	插入单条数据（部分）：
+		INSERT [INTO] table_name(...) VALUES(...)
+		
+	插入多条数据（整行）：
+		INSERT [INTO] table_name VALUES(...),(...),(...),(...);
+		
+		
+
+update：
+	UPDATE table_name
+		SET sql
+			WHERE 条件
+			
+
+delete:
+	DELETE FROM table_name WHERE 条件
+	
+	
+select:
+    单表查询：（不带条件）
+		SELECT * from table_name
+		SELECT ，， from table_name   //部分
+		SELECT DISTINCT ，， from table_name   //部分,去掉重复
+		SELECT ，+-*/% 新列名， from table_name   //部分，四则运算
+		SELECT CONCAT(...) from table_name   //设置格式(字符串连接)
+	单表查询：（带条件）
+		SELECT * from table_name WHERE 条件 AND 条件
+		SELECT * from table_name WHERE ..[NOT] BETWEEN .. AND..   //范围
+		SELECT * from table_name WHERE .. IS [NOT] NULL   //空
+		SELECT * from table_name WHERE .. [NOT] IN(...)    //集合
+		SELECT * from table_name WHERE .. [NOT] LIKE '.%'        //通配符，多个字符
+		SELECT * from table_name WHERE .. [NOT] LIKE '_..'       //通配符，一个字符
+    单表查询：（排序）
+		SELECT * from table_name ORDER BY .. ASC|DESC            //升序（默认），降序
+		SELECT * from table_name ORDER BY ..，..                 //多字段排序
+	单表查询：（限制数量）
+		SELECT * from table_name WHERE 条件 LIMIT number        //number
+		SELECT * from table_name WHERE 条件 LIMIT index,number  //指定位置，数目
+	单表查询：（函数）
+		SELECT COUNT(),AVG(),SUM(),MAX(),MIN() from table_name WHERE 条件   //COUNT不包含NULL
+		SELECT .. from table_name WHERE 条件 GROUP BY .. HAVING ..      //分组
+		
+	多表查询：
+		并，笛卡尔积，内连接，外链接
+		内连接：自连接，等值连接，不等连接
+		外链接：左链接，右连接
+		子查询（重点）
+		
+		
+		
+		
+		
+		
+		
+	
+	

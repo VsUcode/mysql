@@ -1,0 +1,11 @@
+创建数据库：
+	CREATE DATABASE 创建数据库(name)
+
+查看有哪些数据库
+	SHOW DATABASES
+
+选择数据库
+	USE 创建数据库(name)
+	
+删除数据库
+	USE 创建数据库(name)

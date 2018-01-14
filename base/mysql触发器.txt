@@ -1,0 +1,25 @@
+单条执行语句的触发器：
+	CREATE TRIGGER tri_name
+		BEFORE|AFTER  INSERT|UPDATE|DELETE
+				ON table_name FOR EACH ROW
+						语句
+						
+多条执行语句的触发器：
+DELIMITER$$
+	CREATE TRIGGER tri_name
+		BEFORE|AFTER  INSERT|UPDATE|DELETE
+				ON table_name FOR EACH ROW
+					BEGIN
+						语句1;
+						语句2;
+					END
+					$$
+DELIMITER;
+
+
+查看触发器：
+	SHOW TRIGGERS
+	
+
+删除触发器：
+	DROP TRIGGER tri_name

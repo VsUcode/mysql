@@ -1,0 +1,14 @@
+创建视图：
+	CREATE VIEW view_name
+		AS 查询语句
+		
+查看视图定义：
+	SHOW CREATE view_name
+	
+查看视图设计信息：
+	DESCRIBE | DESC view_name
+	
+修改视图：
+	
+删除视图：
+    DROP VIEW view_name

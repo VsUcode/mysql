@@ -1,0 +1,77 @@
+﻿------------------
+算术运算符：
+	+ - * / %
+	
+mysql软件支持的运算符
+	>   <   =【<=>】   !=【<>】  >=   <=    between and     is null     in     like     regexp
+	
+特殊功能的比较运算符：regexp
+	^：匹配字符串的开始部分
+	$：匹配字符串的结束部分
+	.：匹配字符串的任意一个字符
+    []：匹配集合中任意一个
+	[^]：集合外
+	str1|str2|str3：匹配这三个中任意一个
+	*：
+	+：
+	str{n]：
+	str(m, n)：
+	
+逻辑运算符：
+	and &&
+	or ||
+	not !
+	xor :异或
+
+位运算符：
+	&	|	~	^	<<	>>
+	
+	
+
+------------------------------
+常用函数：
+
+	字符串函数：
+		cancat(str1, str2, ...)
+		insert(str, x, y, instr)：将字符串str从第x位置开始，y个字符长的子串替换为字符串instr
+		lower(str):			upper(str):
+		left(str, x)		right(str, x)
+		lpad(str, n, pad):		rpad(str, n, pad):
+		ltrim(str):去掉左边空格		rtrim(str)
+		repeat(str, x):重复x次
+		replace(str, a, b)
+		strcmp(str1, str2)
+		trim(str)
+		substring(str, x, y)
+		
+	数值函数：
+		abs(x)
+		ceil(x)：返回大于x的最大整数值
+		floor(x)：返回小于x的最大整数值
+		mod(x, y)
+		rand()：返回0-1内的随机数
+		round(x, y)：返回x四舍五入后有y位小数的数值
+		truncate(x, y)：返回x截断为y位小数的数值
+		
+	日期和时间函数：
+		curdate()：当前日期
+		curtime()：当前时间
+		now()：当前的日期和时间
+		week(date)：返回日期date为一年中的第几周
+		year(date)：年份
+		hour(time)		minute(time)	second(time)	monthname(date)
+		
+	系统信息:
+		version()
+		database()
+		user()
+
+
+----------------
+聚合函数：
+	AVG() 返回某列的平均值
+	COUNT() 返回某列的行数
+	MAX() 返回某列的最大值
+	MIN() 返回某列的最小值
+	SUM() 返回某个列之和
+		

@@ -1,0 +1,40 @@
+创建表 + 约束：
+    CREATE TABLE 表1(
+        id VARCHAR(10) PRIMARY KEY ,
+		tname VARCHAR(10) NOT NULL,
+		tpassword VARCHAR(18) DEFAULT '123456',
+		ttel int(11) UNIQUE
+-- 		card VARCHAR(10) FOREIGN KEY REFERENCES
+--      ts int AUTO_INCREMENT
+    )
+	
+
+查看表结构：
+	DESCRIBE 表1
+	
+查看表定义：
+	SHOW CREATE TABLE 表1
+	
+
+修改表：
+	表名：
+		ALTER TABLE 表1 RENAME table1
+	添加列：
+		ALTER TABLE table1 
+			ADD lie int 	//表尾添加
+			ADD lie int FIRST	//表头添加
+			ADD lie int AFTER 属性名	//任意位置添加
+	修改列：
+		ALTER TABLE table1 
+			MODIFY lie VARCHAR(5)		//只修改数据类型
+			CHANGE lie lie1 旧数据类型		//只修改属性名
+			CHANGE lie1 lie 新数据类型		//同时修改属性名和数据类型
+			MODIFY 属性名1 数据类型 FIRST		// 移到表头
+			MODIFY 属性名1 数据类型 AFTER 属性名2		//移到属性名2后面
+	删除列：
+		ALTER TABLE table1 
+			DROP lie
+			
+			
+删除表：
+	DROP TABLE table1
